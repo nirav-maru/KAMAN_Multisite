@@ -25,8 +25,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.JiraProcess.JiraRules;
-import com.JiraProcess.SendJiraDetails;
+//import com.JiraProcess.JiraRules;
+//import com.JiraProcess.SendJiraDetails;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
