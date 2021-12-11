@@ -92,6 +92,7 @@ public class Execute_MainScript {
 	public static String Channel;
 	String Device;
 	public static String Env;
+	public static String Concept;
 	String Section;
 	String Functionality;
 	String Testcase_description; 
@@ -200,6 +201,7 @@ public class Execute_MainScript {
 		this.browser=rs.browser;
 		this.Channel=Channel;
 		this.Env=rs.Envtype;
+		this.Concept=rs.Concept;
 		//ChromeOptions options = new ChromeOptions();
 		//options.addArguments("start-maximized");
 		//options.addArguments("--disable-notifications");
@@ -401,7 +403,7 @@ public class Execute_MainScript {
 
 					if(uc.OS.equalsIgnoreCase("Windows")) {
 
-						FC.ExecuteTestcasesWindows(Testcasenumber, scre, Sitename, browser,StartTime, Startdate, webdriver, Functionality, Section, Testcase_description, Executionmode, Severity, extent, Applog,ExecutionRound,Env);
+						FC.ExecuteTestcasesWindows(Testcasenumber, scre, Sitename, browser,StartTime, Startdate, webdriver, Functionality, Section, Testcase_description, Executionmode, Severity, extent, Applog,ExecutionRound,Env,Concept);
 						System.gc();
 					}
 

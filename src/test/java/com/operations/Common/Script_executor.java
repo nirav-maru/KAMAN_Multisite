@@ -55,7 +55,7 @@ public class Script_executor {
 
 
 	public void Execute_script(String Sitename ,String browsername,String Filepath,String WriteOutput,String ScreenshotsPath, WebDriver driver,String Section,String Functionality,String Testcasenumber,
-			String Testcase_description , String Executionmode,String Severity,String Screenshots , String ExcelReports,ExtentReports extent,Logger log,String env) throws Throwable{
+			String Testcase_description , String Executionmode,String Severity,String Screenshots , String ExcelReports,ExtentReports extent,Logger log,String env,String Concept) throws Throwable{
 
 
 		Keywords_finder operation = new Keywords_finder(driver,log,browsername,env);
@@ -65,8 +65,8 @@ public class Script_executor {
 		allObjects =  object.getObjectRepository();
 
 		String InputFilepath=Filepath+Functionality+"/";
-		Readexcel = new Xls_Reader(Filepath+Section+"/"+Functionality+"/"+Testcasenumber+".xlsx");
-		File file =	new File(Filepath +Section+"/"+Functionality +"/"+ Testcasenumber+".xlsx");
+		Readexcel = new Xls_Reader(Filepath+"/"+Concept+"/"+Section+"/"+Functionality+"/"+Testcasenumber+".xlsx");
+		File file =	new File(Filepath +"/"+Concept+"/"+Section+"/"+Functionality +"/"+ Testcasenumber+".xlsx");
 		FileInputStream inputStream = new FileInputStream(file);
 		XSSFWorkbook Workbook = null;
 		Workbook = new XSSFWorkbook(inputStream);
@@ -101,8 +101,8 @@ public class Script_executor {
 
 			String str = Teststep_sheet.getRow(i).toString();
 			Row row = Teststep_sheet.getRow(i);
-			
-			
+
+
 			String Keyword=Readexcel.getCellDataBySheetName(Teststep_sheet_name, 1, i);
 			Object=Readexcel.getCellDataBySheetName(Teststep_sheet_name, 2, i);
 			String ObjectType=Readexcel.getCellDataBySheetName(Teststep_sheet_name, 3, i);

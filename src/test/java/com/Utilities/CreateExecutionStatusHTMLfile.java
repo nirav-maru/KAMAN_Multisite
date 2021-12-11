@@ -29,6 +29,7 @@ public class CreateExecutionStatusHTMLfile {
 		int failcount = Execute_FailedScript.failcounter;
 		int TotalTC = Execute_MainScript.TotalTCcounter;
 		String browser = Execute_MainScript.browser;
+		String Concept =Execute_MainScript.Concept;
 		String ExecutionStatus = null;
 		FileWriter writer = new FileWriter("./test-output/MailStatus.html", false);
 		String StatusColor=null;
@@ -74,6 +75,7 @@ public class CreateExecutionStatusHTMLfile {
 
 		String tmpmailBOdy="Test execution status as below :"+"<br />"+"<br />"
 				+"<p style='color:"+StatusColor+";font-size:20px'><font color='Black'; size=2px><b>Test Execution Status: </font>"+ExecutionStatus+"</b></p>"
+				+ "<b>Test Concept : </b>"+Concept+"<br />"
 				+ "<b>Test browser : </b>"+browser+"<br />"
 				+ "<b>Test execution Start Time : </b>"+Sdate+"<br />"
 				+ "<b>Test execution End Time : </b>"+edate+"<br />"+"<br />"

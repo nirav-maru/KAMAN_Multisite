@@ -97,6 +97,7 @@
                  <SelfService_MU_Password>${SelfService_MU_Password}</SelfService_MU_Password>
                  <Envtype>${Envtype}</Envtype>
                   <browser>${browser}</browser>
+                  <Concept>${Concept}</Concept>
                 </systemPropertyVariables>
                     <suiteXmlFiles>
                         <suiteXmlFile>TestRun.xml</suiteXmlFile>
