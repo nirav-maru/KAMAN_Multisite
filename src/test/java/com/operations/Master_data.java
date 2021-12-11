@@ -120,7 +120,7 @@ public class Master_data {
 		
 		if(uc.OS.equalsIgnoreCase("Windows")) {
 
-			 Master_file =	new File(Constants.Windows_MEFileLocation+"/"+rs.Envtype+"/"+"MasterExecutor"+"_"+str+".xlsx");
+			 Master_file =	new File(Constants.Windows_MEFileLocation+"/"+rs.Envtype+"/"+rs.Concept+"/"+"MasterExecutor"+"_"+str+".xlsx");
 		}
 		
 		else if (uc.OS.equalsIgnoreCase("Linux")) {

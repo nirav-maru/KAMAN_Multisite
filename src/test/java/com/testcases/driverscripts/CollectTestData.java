@@ -31,6 +31,7 @@ public class CollectTestData {
 			out.write("SelfService_SU_Password="+ System.getProperty("SelfService_SU_Password")+"\n");
 			out.write("SelfService_MU_Username="+ System.getProperty("SelfService_MU_Username")+"\n");
 			out.write("SelfService_MU_Password="+ System.getProperty("SelfService_MU_Password")+"\n");
+			out.write("Concept="+ System.getProperty("Concept")+"\n");
 			out.close(); 
 		} 
 		catch (IOException e) { 

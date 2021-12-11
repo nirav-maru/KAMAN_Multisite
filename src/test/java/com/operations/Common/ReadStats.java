@@ -10,6 +10,7 @@ public class ReadStats {
 
 	public String Envtype;
 	public String browser;
+	public String Concept;
 	
 	//public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -22,6 +23,7 @@ public class ReadStats {
 			prop1.load(inputStream);
 			Envtype = prop1.getProperty("Envtype");	
 			browser = prop1.getProperty("Browser");	
+			Concept= prop1.getProperty("Concept");
 		//	System.out.println(Envtype);
 			
 			}

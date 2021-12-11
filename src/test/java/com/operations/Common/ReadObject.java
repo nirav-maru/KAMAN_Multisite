@@ -16,8 +16,8 @@ public class ReadObject {
 	public Properties getObjectRepository() throws IOException{
 		//Read object repository file
 		rs.getRepositoryValues();
-		String str = System.getProperty("user.dir")+"\\resources\\CSSLocators_"+rs.Envtype+".properties";
-		InputStream stream = new FileInputStream(new File(System.getProperty("user.dir")+"\\resources\\CSSLocators_"+rs.Envtype+".properties"));
+		String str = System.getProperty("user.dir")+"\\resources\\CSSLocators_"+rs.Envtype+"_"+rs.Concept+".properties";
+		InputStream stream = new FileInputStream(new File(System.getProperty("user.dir")+"\\resources\\CSSLocators_"+rs.Envtype+"_"+rs.Concept+".properties"));
 		//load all objects
 		p1.clear();
 		p1.load(stream);

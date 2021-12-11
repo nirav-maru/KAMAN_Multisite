@@ -145,13 +145,13 @@ public class FireClass {
 
 
 	public void ExecuteTestcasesWindows(String Testcasenumber,Script_executor scre,String Sitename,String browser_name,SimpleDateFormat StartTime,Date Startdate,WebDriver webdriver,String Functionality,String Section,
-			String Testcase_description,String Executionmode, String Severity ,ExtentReports extent,Logger Applog,String ExecutionRound,String env ) throws Throwable {
+			String Testcase_description,String Executionmode, String Severity ,ExtentReports extent,Logger Applog,String ExecutionRound,String env,String Concept ) throws Throwable {
 
 		uc.getUserConfig();
 		rs.getRepositoryValues();
 		System.out.println("Currently running Testcase : " + Testcasenumber);
 		scre.Execute_script(Sitename,browser_name,Constants.Windows_InputFileLocation+uc.SiteName+"/"+rs.Envtype+"/",Constants.Windows_OutputFileLocation+StartTime.format(Startdate)+"/"+Sitename+"/"+browser_name+"/",
-				Constants.Windows_ScreenshotsLocation+StartTime.format(Startdate)+"/"+uc.SiteName+"/"+browser_name+"/"+rs.Envtype +"/"+ExecutionRound+"/", webdriver,Section,Functionality, Testcasenumber, Testcase_description, Executionmode, Severity,uc.Scr,uc.ExcelReports,extent,Applog,env);
+				Constants.Windows_ScreenshotsLocation+StartTime.format(Startdate)+"/"+uc.SiteName+"/"+browser_name+"/"+rs.Envtype +"/"+ExecutionRound+"/", webdriver,Section,Functionality, Testcasenumber, Testcase_description, Executionmode, Severity,uc.Scr,uc.ExcelReports,extent,Applog,env,Concept);
 
 
 	}
