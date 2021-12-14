@@ -31,7 +31,7 @@ public class CreateExecutionStatusHTMLfile {
 		String browser = Execute_MainScript.browser;
 		String Concept =Execute_MainScript.Concept;
 		String ExecutionStatus = null;
-		FileWriter writer = new FileWriter("./test-output/MailStatus.html", false);
+		FileWriter writer = new FileWriter("./test-output/MailStatus_"+rs.Concept+".html", false);
 		String StatusColor=null;
 		String mailBOdy = null;
 		String FinalMailBody = null;
